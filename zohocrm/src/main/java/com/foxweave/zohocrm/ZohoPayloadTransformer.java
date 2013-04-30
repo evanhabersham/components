@@ -14,7 +14,7 @@ public class ZohoPayloadTransformer implements PipelinePayloadTransformer {
 	@Override
 	public JSONObject transform(JSONObject payload) throws Exception {
 		JSONObject transformedPayload = new JSONObject();
-		System.out.println(Thread.currentThread().getStackTrace());
+	
 		
 			
 			JSONArray FL = payload.getJSONArray("FL");
