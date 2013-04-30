@@ -13,7 +13,7 @@
             "apiKey": {
                 "label" : "API Key",
                 "type": "password",
-                "hint": "ZohoCRM API Key. "
+                "hint": "ZohoCRM API Key."
             }
         }
     },
@@ -61,8 +61,7 @@
                             {"name": "Secondary_Email", "label": "Secondary Email", "hint": "Lead's Secondary Email", "provideOn": {"create": "optional"}},
                             {"name": "Last_Activity_Time", "label": "Last Activity Time", "hint": "The last time something hapened with the lead", "provideOn": {"create": "exclude"}}, 
                             {"name": "Twitter", "label": "Twitter", "hint": "Lead's Twitter name", "provideOn": {"create": "optional"}}
-                        ]
-                    
+                        ]                
                 
             },
             

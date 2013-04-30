@@ -1,5 +1,9 @@
 package com.foxweave.zohocrm;
 
+import java.lang.management.ManagementFactory;
+import java.lang.management.ThreadInfo;
+import java.lang.management.ThreadMXBean;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -10,9 +14,9 @@ public class ZohoPayloadTransformer implements PipelinePayloadTransformer {
 	@Override
 	public JSONObject transform(JSONObject payload) throws Exception {
 		JSONObject transformedPayload = new JSONObject();
+		System.out.println(Thread.currentThread().getStackTrace());
 		
-
-				
+			
 			JSONArray FL = payload.getJSONArray("FL");
 				int numFields = FL.length();
 				//Start traversing the 'FL' array
@@ -28,8 +32,7 @@ public class ZohoPayloadTransformer implements PipelinePayloadTransformer {
 				}
 		
 			
-		
-	
+
 	
 		return transformedPayload;
 	}
